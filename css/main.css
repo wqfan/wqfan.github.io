@@ -1,0 +1,195 @@
+/*General*/
+* {
+  font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 0.9em;
+  margin-bottom: 0.9em;
+}
+p.small {
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/*Header*/
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/header.jpg);
+  color: #ffffff;
+}
+header .container {
+  padding-top: 200px;
+  padding-bottom: 100px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+header .name {
+  display: block;
+  font-weight: 700;
+  font-size: 4.75em;
+}
+@media (max-width: 640px) {
+  header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  header .name {
+    display: block;
+    font-weight: 700;
+    font-size: 3em;
+  }
+}
+
+/*Navigation bar*/
+nav a, nav a:visited {
+  color: #387395;
+}
+.navbar-default {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-brand {
+  color: #387395;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #000000;
+}
+.navbar-default .navbar-text {
+  color: #387395;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #387395;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #000000;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #000000;
+  background-color: #D9DEE1;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #000000;
+  background-color: #D9DEE1;
+}
+.navbar-default .navbar-toggle {
+  border-color: #D9DEE1;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #D9DEE1;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #387395;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #387395;
+}
+.navbar-default .navbar-link {
+  color: #387395;
+}
+.navbar-default .navbar-link:hover {
+  color: #000000;
+}
+/*#52A1B6*/
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #387395;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #000000;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #000000;
+    background-color: #D9DEE1;
+  }
+}
+
+/*Section*/
+section {
+  padding: 100px 0;
+}
+
+section.alternation {
+  background: #387395;
+  /*background-image: url("../images/skills.jpg");*/
+  /*background-size: cover;*/
+  /*background-position: center;*/
+  color: white;
+}
+
+section .title {
+  margin: 0 0 30px;
+}
+
+/*Contact*/
+#contact a,
+#contact a:hover,
+#contact a:focus,
+#contact a:active {
+  text-decoration: none;
+}
+
+/*Footer*/
+footer {
+  color: white;
+  background-color: #387395;
+}
+
+footer .container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/*LaTeX*/
+.latex {
+  font-family: "Times New Roman";
+  font-size: 1.6em;
+  vertical-align: 0.3ex;
+}
+
+.latex .sup {
+  font-family: "Times New Roman";
+  font-size: 0.75em;
+  margin-left: -0.45em;
+  vertical-align: 0.5ex;
+  line-height: 0;
+  margin-right: -0.2em;
+}
+
+.latex .sub {
+  font-family: "Times New Roman";
+  margin-left: -0.1em;
+  vertical-align: -0.5ex;
+  line-height: 0;
+  margin-right: -0.1em
+}
