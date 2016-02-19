@@ -1,2 +1,2 @@
 # wqfan.github.io
-## Personal Webiste
+Personal Website
