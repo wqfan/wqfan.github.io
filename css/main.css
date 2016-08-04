@@ -193,3 +193,17 @@ footer .container {
   line-height: 0;
   margin-right: -0.1em
 }
+
+.intro-text a {
+    /*font-family: 'EB Garamond', serif;*/
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2em;
+    color: white;
+    margin: 7px 5px;
+}
+
+.first-char {
+    /*font-family: 'EB Garamond', serif;*/
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.21em;
+}
