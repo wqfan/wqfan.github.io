@@ -151,6 +151,12 @@ section .title {
   margin: 0 0 30px;
 }
 
+/* About Me */
+.about-me {
+  text-align: center;
+  font-family: "SFMono-Light", "Montserrat";
+}
+
 /*Contact*/
 #contact a,
 #contact a:hover,
