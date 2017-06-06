@@ -1,0 +1,23 @@
+/*LaTeX*/
+.latex {
+  font-family: "Times New Roman";
+  font-size: 1.6em;
+  vertical-align: 0.3ex;
+}
+
+.latex .sup {
+  font-family: "Times New Roman";
+  font-size: 0.75em;
+  margin-left: -0.45em;
+  vertical-align: 0.5ex;
+  line-height: 0;
+  margin-right: -0.2em;
+}
+
+.latex .sub {
+  font-family: "Times New Roman";
+  margin-left: -0.1em;
+  vertical-align: -0.5ex;
+  line-height: 0;
+  margin-right: -0.1em
+}

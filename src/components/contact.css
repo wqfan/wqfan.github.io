@@ -1,0 +1,10 @@
+#contact a,
+#contact a:focus,
+#contact a:active {
+  color: #EAE3E4;
+  text-decoration: none;
+}
+#contact a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
