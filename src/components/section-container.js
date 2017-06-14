@@ -2,7 +2,7 @@ import React from 'react'
 
 function SectionContainer(props) {
   return (
-    <section id="about">
+    <section>
         <div className="container">
             <div className="row">
                 {props.children}
