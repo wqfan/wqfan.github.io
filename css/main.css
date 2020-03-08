@@ -1,182 +1,177 @@
 /*General*/
+
 * {
-  font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
-p {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
-  margin-top: 0.9em;
-  margin-bottom: 0.9em;
-}
-p.small {
-  font-size: 16px;
-}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase;
-  font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
 }
+
+body {
+    color: white;
+}
+
 
 /*Header*/
-header {
-  position: relative;
-  width: 100%;
-  min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  /*background-image: url(../images/header.jpg);*/
-  color: #ffffff;
-  height: 100vh;
-}
-header .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
-}
-header .name {
-  display: block;
-  font-weight: 700;
-  font-size: 4.75em;
-}
-@media (max-width: 640px) {
-  header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
-  }
 
-  header .name {
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+header .name {
     display: block;
     font-weight: 700;
-    font-size: 3em;
-  }
+    font-size: 4.75em;
+}
+
+header a {
+    color: white !important;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 640px) {
+    header .container {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    header .name {
+        display: block;
+        font-weight: 700;
+        font-size: 3em;
+    }
 }
 
 .fullscreen-bg {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
 }
 
 .fullscreen-bg__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 @media (min-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    height: 300%;
-    top: -100%;
-  }
+    .fullscreen-bg__video {
+        height: 300%;
+        top: -100%;
+    }
 }
 
 @media (max-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    width: 300%;
-    left: -100%;
-  }
+    .fullscreen-bg__video {
+        width: 300%;
+        left: -100%;
+    }
 }
 
-/*@media (max-width: 767px) {
-  .fullscreen-bg {
-    background: url('../images/water.jpg') center center / cover no-repeat;
-  }
-
-  .fullscreen-bg__video {
-    display: none;
-  }
-}*/
 
 /*Section*/
+
 section {
-  padding: 100px 0;
-  color: white;
-  /*background: #FFFFFF;*/
+    padding: 8rem 0;
 }
 
-section.alternation {
-  background: none;
-  /*background: #387395;*/
-  /*background-image: url("../images/skills.jpg");*/
-  /*background-size: cover;*/
-  /*background-position: center;*/
-  color: white;
+section .container h2 {
+    margin-bottom: 1em;
 }
 
-section .title {
-  margin: 0 0 30px;
-}
 
 /* About Me */
-.about-me {
-  text-align: center;
-  font-family: "SFMono-Light", "Montserrat";
+
+#skills ul {
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
+#skills ul>li {
+    display: inline-block;
+}
+
+
 /*Contact*/
+
 #contact a,
 #contact a:focus,
 #contact a:active {
-  color: #EAE3E4;
-  text-decoration: none;
+    color: #EAE3E4;
+    text-decoration: none;
 }
+
 #contact a:hover {
-  color: #FFFFFF;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
+
+#contact .col a {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /*Footer*/
-footer {
-  color: white;
-  /*background-color: #387395;*/
-}
 
 footer .container {
-  padding-top: 25px;
-  padding-bottom: 25px;
+    padding-bottom: 1.5em;
 }
 
+
 /*LaTeX*/
+
 .latex {
-  font-family: "Times New Roman";
-  font-size: 1.6em;
-  vertical-align: 0.3ex;
+    font-family: "Times New Roman";
+    font-size: 1.6em;
+    vertical-align: 0.3ex;
 }
 
 .latex .sup {
-  font-family: "Times New Roman";
-  font-size: 0.75em;
-  margin-left: -0.45em;
-  vertical-align: 0.5ex;
-  line-height: 0;
-  margin-right: -0.2em;
+    font-family: "Times New Roman";
+    font-size: 0.75em;
+    margin-left: -0.45em;
+    vertical-align: 0.5ex;
+    line-height: 0;
+    margin-right: -0.2em;
 }
 
 .latex .sub {
-  font-family: "Times New Roman";
-  margin-left: -0.1em;
-  vertical-align: -0.5ex;
-  line-height: 0;
-  margin-right: -0.1em
-}
-
-.intro-text a {
-    color: white;
+    font-family: "Times New Roman";
+    margin-left: -0.1em;
+    vertical-align: -0.5ex;
+    line-height: 0;
+    margin-right: -0.1em
 }
