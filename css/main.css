@@ -52,6 +52,10 @@ header a {
     color: white !important;
 }
 
+header a:hover {
+    text-decoration: none;
+}
+
 header p {
     font-size: 1.5rem;
 }
@@ -71,11 +75,22 @@ header p {
 .fullscreen-bg {
     position: fixed;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    z-index: -100;
+    z-index: -1;
+}
+
+.fullscreen-bg__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: #0B0D26;
+    opacity: 0.15;
 }
 
 .fullscreen-bg__video {
@@ -84,6 +99,7 @@ header p {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -147,6 +163,7 @@ section .container h2 {
 /*Footer*/
 
 footer .container {
+    padding-top: 3em;
     padding-bottom: 1.5em;
 }
 
