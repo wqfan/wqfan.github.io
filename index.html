@@ -15,7 +15,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-
 </head>
 
 <body>
@@ -49,10 +48,14 @@
                 <i class="fab fa-instagram fa-2x"></i>
             </a>
         </div>
-        <div class="horizontal-center">
-            &copy; Qingfan Wu 2021
+        <div id="copyright" class="horizontal-center">
+            
         </div>
     </footer>
+    <script>
+        const e = document.getElementById('copyright')
+        e.textContent = `© Qingfan Wu ${(new Date()).getFullYear()}`
+    </script>
 </body>
 
 </html>
